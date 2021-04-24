@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Converter App</title>
+</head>
+<body>
+    <header  class="navigation-bar">
+        <div class="navigation-container">
+            <div class=""><img class="navigation-logo" src="img/logo1.png" alt="company-logo"></div>
+            <div class="navigation-left">
+                <a href="#" class="navigation-item">Home</a>
+                <a href="#" class="navigation-item">About</a>
+                <a href="#" class="navigation-item">Sign up</a>
+                <a href="#" class="navigation-item">Login</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1 class="main-header">File Converter</h1>                
+            <p class="main-paragraph">Changer is an online file converter. We support nearly all audio, video, document, ebook, archive, image, spreadsheet, and presentation formats. To get started, use the button below and select files to convert from your computer.</p>
+        </div>
+        <form  action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="file-upload" class="custom-file-upload">
+               Upload File
+            </label>
+            <input id="file-upload" type="file"/>
+            <button class="file-submit"> <i class="fa fa-cloud-upload"></i>Convert</button>
+        </form>
+    </header>
+    
+    <section class="convertation">
+        <div>
+
+            <form action="/" >
+                <label for="From" class="convert-from-label">From..</label>
+                <select name="From" id="From" class="convert-box">
+                    <option  value="pdf">pdf</option>
+                    <option  value="docx">docx</option>
+                </select>
+                <label for="To" class="convert-to-label">To..</label>
+                <select name="To" id="To" class="convert-box">
+                    <option  value="docx">docx</option>
+                    <option  value="pdf">pdf</option>
+                </select>
+            </form>
+
+        </div>
+    </section>
+
+</body>
+</html>
